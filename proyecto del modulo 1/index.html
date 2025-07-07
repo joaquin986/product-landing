@@ -1,0 +1,161 @@
+<!-- index.html - Landing Page (Tailwind CSS) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-blue-600 text-white p-4">
+    <nav class="flex justify-between items-center">
+      <h1 class="text-xl font-bold">Mi Producto</h1>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+        <li><a href="testimonios.html" class="hover:underline">Testimonios</a></li>
+        <li><a href="compra.html" class="hover:underline">Compra</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="p-8">
+    <section class="mb-10 text-center">
+      <h2 class="text-3xl font-bold">Bienvenido a la revolución de la productividad</h2>
+      <p class="mt-4">Un producto que cambiará tu forma de trabajar.</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-4 border rounded-lg shadow">
+        <img src="img/mackbook.webp" alt="Producto 1" class="w-full h-48 object-cover mb-2" />
+        <h3 class="font-bold text-lg">Producto 1</h3>
+        <p>Descripción del producto 1.</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow">
+        <img src="img/magic-keyboard-for-ipad-pro-13inch-m4-us-english-black_MWR53_00542a60-1ab9-486d-b2af-04814ba43665.webp" alt="Producto 2" class="w-full h-48 object-cover mb-2" />
+        <h3 class="font-bold text-lg">Producto 2</h3>
+        <p>Descripción del producto 2.</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow">
+        <img src="img/phone.webp" alt="Producto 3" class="w-full h-48 object-cover mb-2" />
+        <h3 class="font-bold text-lg">Producto 3</h3>
+        <p>Descripción del producto 3.</p>
+      </div>
+    </section>
+
+    <section class="mt-12 max-w-xl mx-auto">
+      <h2 class="text-2xl font-semibold text-center mb-4">Solicita más información</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required />
+        </div>
+        <div>
+          <label for="producto" class="block text-sm font-medium text-gray-700">Producto de interés</label>
+          <select id="producto" name="producto" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+            <option>Producto 1</option>
+            <option>Producto 2</option>
+            <option>Producto 3</option>
+          </select>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 Mi Empresa</p>
+  </footer>
+</body>
+</html>
+
+<!-- testimonios.html - Página de testimonios (Tailwind CSS) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-600 text-white p-4">
+    <nav class="flex justify-between items-center">
+      <h1 class="text-xl font-bold">Testimonios</h1>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+        <li><a href="testimonios.html" class="hover:underline">Testimonios</a></li>
+        <li><a href="compra.html" class="hover:underline">Compra</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="p-8">
+    <h2 class="text-2xl font-semibold mb-6">Lo que dicen nuestros usuarios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <blockquote class="p-4 bg-white border-l-4 border-blue-500">
+        <p>"Este producto es increíble!"</p>
+        <footer class="mt-2 text-sm text-gray-600">— Juan Pérez</footer>
+      </blockquote>
+      <blockquote class="p-4 bg-white border-l-4 border-blue-500">
+        <p>"Me ayudó a organizar mi trabajo en un 100%."</p>
+        <footer class="mt-2 text-sm text-gray-600">— Ana López</footer>
+      </blockquote>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 Mi Empresa</p>
+  </footer>
+</body>
+</html>
+
+<!-- compra.html - Página de compra (Bootstrap) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi Producto</a>
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="compra.html">Compra</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <h2 class="mb-4">Formulario de Compra</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required />
+      </div>
+      <div class="mb-3">
+        <label for="producto" class="form-label">Producto</label>
+        <select id="producto" class="form-select">
+          <option>Producto A</option>
+          <option>Producto B</option>
+          <option>Producto C</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="imagen" class="form-label">Sube una imagen del comprobante (opcional)</label>
+        <input type="file" class="form-control" id="imagen" />
+      </div>
+      <button type="submit" class="btn btn-success">Finalizar Compra</button>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
